@@ -1,0 +1,89 @@
+ADOBE INDESIGN PRINTING INSTRUCTIONS FOR SERVICE PROVIDER REPORT
+
+PUBLICATION NAME: FDA_trifold_0815_2.indd
+
+PACKAGE DATE: 7/16/15 2:59 PM
+Creation Date: 7/16/15
+Modification Date: 7/16/15
+
+CONTACT INFORMATION
+
+Company Name: 
+Contact: 
+Address: 
+
+
+
+
+
+Phone: 
+Fax: 
+Email: 
+
+SPECIAL INSTRUCTIONS AND OTHER NOTES
+
+
+
+
+
+
+External Plug-ins 0
+Non Opaque Objects :On Page1, 2
+
+FONTS
+5 Fonts Used; 0 Missing, 1 Embedded, 0 Incomplete, 0 Protected
+
+Fonts Packaged
+- Name: DroidSerif; Type: TrueType, Status: Embedded
+- Name: HelveticaNeue-Light; Type: TrueType, Status: OK
+- Name: HelveticaNeue-Medium; Type: TrueType, Status: OK
+- Name: HelveticaNeue-Thin; Type: TrueType, Status: OK
+- Name: HelveticaNeue-ThinItalic; Type: TrueType, Status: OK
+
+
+COLORS AND INKS
+4 Process Inks; 2 Spot Inks
+
+- Name and Type: Process Cyan; Angle: 75.000; Lines/Inch: 70.000
+- Name and Type: Process Magenta; Angle: 15.000; Lines/Inch: 70.000
+- Name and Type: Process Yellow; Angle: 0.000; Lines/Inch: 70.000
+- Name and Type: Process Black; Angle: 45.000; Lines/Inch: 70.000
+- Name and Type: PANTONE 2935 C; Angle: 45.000; Lines/Inch: 70.000
+- Name and Type: PANTONE 7548 C; Angle: 45.000; Lines/Inch: 70.000
+
+
+LINKS AND IMAGES
+(Missing & Embedded Links Only)
+Links and Images: 29 Links Found; 0 Modified, 0 Missing 0 Inaccessible
+Images: 0 Embedded, 0 use RGB color space
+
+
+PRINT SETTINGS
+PPD: Generic PostScript Printer, (HP Color LaserJet CP3525 [402BDA])
+Printing To: Printer
+Number of Copies: 1
+Reader Spreads: No
+Even/Odd Pages: Both
+Pages: All
+Proof: No
+Tiling: None
+Scale: 100%, 100%
+Page Position: Upper Left
+Print Layers: Visible & Printable Layers
+Printer's Marks: None
+Bleed: 0 in, 0 in, 0 in, 0 in
+Color: Composite, Colors in Black.
+Trapping Mode: None
+Send Image Data: Optimized Subsampling
+OPI/DCS Image Replacement: No
+Page Size: Custom: 18 in x 10.5 in
+Paper Dimensions: 8.5 in x 11 in
+Orientation: Landscape
+Negative: No
+Flip Mode: Off
+
+
+FILE PACKAGE LIST
+
+1. FDA_trifold_0815_2.indd; type: Adobe InDesign publication; size: 4236K
+2. HelveticaNeue.dfont; type: Font file; size: 5017K
