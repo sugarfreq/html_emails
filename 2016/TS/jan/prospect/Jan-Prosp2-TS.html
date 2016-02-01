@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="TS-styles-base.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+/*
+------------------------
+    Base Email Styles
+-------------------------
+*/
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; /*capitalize 'M' to keep Outlook from stripping it out*/
+ padding:0;
+ font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+
+table { /*remove cellpadding, cellspacing, and border from tables*/
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+
+td{
+  padding: 0;
+}
+
+img{
+  border:0;
+}
+
+.imgfix{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #000001;
+  font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+p{
+  font-size: 18px;
+  Margin: 0;
+  font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+p.h1 {
+  font-size: 30px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+
+p.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+
+.wrapper{
+  width:100%;
+  table-layout: fixed; /*ensure centered content is centered in yahoo*/
+}
+.content-wrapper{
+  background-color:#ffffff;
+  width: 100%;
+  table-layout: fixed;
+}
+.content-wrapper .outer{
+  background-color:#ffffff;
+}
+.webkit {
+  max-width: 600px; /*contain in Apple Mail 6 and Outlook 2011*/
+}
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inner {
+  padding: 10px;
+}
+
+.contents {
+width: 100%;
+}
+
+
+/*
+----------------------------
+   Header Styles
+-----------------------------
+*/
+.prev-text{
+  width:100%;
+  font-size:1px;
+  color:#ffffff;
+  line-height:1px;
+  max-height:1px;
+  overflow:hidden;
+}
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+
+.hf-columns .leftcolumn {
+  width: 100%;
+  max-width: 255px;
+  display: inline-block;
+  vertical-align: top;
+}
+.hf-columns .rightcolumn {
+  width: 100%;
+  max-width: 340px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-links{
+  font-size:12px;
+  text-align:center;
+  color:#444444;
+  text-transform:uppercase;
+}
+.inner.header-links{
+  padding: 0;
+}
+
+.header-links p{
+  font-size:12px;
+  text-align:center;
+  color:#5b86ae;
+  text-transform:uppercase;
+}
+.header-links .h1{
+  color: #1e3444;
+  font-size: 14px;
+  Margin-bottom: 0;
+}
+
+.header-links span{
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.header-image{
+  text-align: center;
+  padding: 10px 0;
+}
+.header-image img{
+  height: auto;
+}
+/*
+----------------------------
+       Hero Styles
+-----------------------------
+*/
+.hero-wrapper{
+  background-color:#d9d6d2;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero-wrapper .outer{
+  background-color: #d9d6d2;
+}
+.hero2-wrapper{
+  background-color:#1e3444;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero2-wrapper .outer{
+  background-color: #1e3444;
+}
+.hero2-wrapper td{
+  line-height:5px;
+}
+/*
+----------------------------
+       Footer Styles
+-----------------------------
+*/
+.footer-wrapper{
+  background-color: #1e3444;
+  width: 100%;
+  table-layout: fixed;
+}
+.footer{
+  background-color: #1e3444;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer a{
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer .social{
+  text-align: center;
+}
+
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  vertical-align:center;
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+}
+.footer-address p{
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+}
+.footer-address a{
+  color:#9E9E9E;
+}
+.footer .hf-columns{
+  padding: 0 0 20px 0;
+}
+
+/*
+----------------------------
+  1. Single Column Styles
+-----------------------------
+*/
+.bodyimg{
+  padding: 0 0 30px 0;
+}
+.one-column .contents {
+    text-align: center;
+}
+.one-column .inner{
+  padding: 10px 20px;
+}
+.one-column p {
+    Margin-bottom: 10px;
+}
+.one-column.cta .inner{
+  padding: 30px 0 20px 0;
+}
+.one-column .cta{
+  padding:30px 0 0 0;
+}
+.one-column .cta p.h1{
+  color: #5b86ae;
+}
+.one-column .cta p{
+  color: #5b86ae;
+}
+.one-column.cta .inner span{
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.one-column .maintxt{
+  padding-bottom: 40px;
+}
+/*
+----------------------------
+  2. Full Width Image Banner
+-----------------------------
+*/
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+/*
+-----------------------------------------------
+   6. Left Sidebar & 7. Right Sidebar Styles
+-----------------------------------------------
+*/
+.left-sidebar {
+    text-align: center;
+    font-size: 0;
+    padding: 15px 0;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.left-sidebar .left {
+    max-width: 100px;
+}
+.left-sidebar .right {
+    max-width: 450px;
+}
+.left-sidebar img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+.left-sidebar .inner{
+  padding: 20px 0;
+}
+.left-sidebar .contents {
+    text-align: left;
+    padding: 0 10px;
+}
+.left-sidebar a {
+    color: #85ab70;
+}
+.left-sidebar p{
+  color:#5e8ab2;
+}
+.left-sidebar .h1{
+  font-size: 24px;
+  color: #1e3444;
+}
+/*
+-----------------------
+   8. Button Styles
+-----------------------
+*/
+
+.button td{
+  padding:10px 20px;
+  background-color: #98cf84;
+  border-radius: 20px;
+}
+
+.button a{
+  font-size: 24px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  -webkit-text-size-adjust:none;
+  color:#000000;
+}
+.button span{
+  font-size: 18px;
+  font-weight: normal;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--Preview Text-->
+      <tr>
+        <td class="one-column">
+              <table width="100%">
+                  <tr>
+                    <td class="prev-text">Hurry! The New Years Special Sale ends January 31st!
+                    </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+<!--Preview Text-->
+<!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="leftcolumn">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.therapysites.com"><img src="https://my.therapysites.com/support/eblasts/images/ts-logo.png" alt="TherapySites">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="rightcolumn">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <p class="h1">Limited Time New Year Special</p>
+                  <p>Get your website for only $39/mo for the year</p>
+                  <p>promo code: <span>2016Special</span></p>
+                  <p>Offer Expires Jan 31st</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--hero block-->
+  <center class="hero-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--full width image-->
+      <tr>
+          <td class="full-width-image">
+              <a href="http://www.therapysites.com"><img src="https://my.therapysites.com/support/eblasts/jan-2016/images/header2.jpg" width="600" alt="" /></a>
+          </td>
+      </tr>
+<!--end full width image-->
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="hero2-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--full width image-->
+      <tr>
+          <td class="full-width-image bodyimg">
+              <a href="http://www.therapysites.com"><img src="https://my.therapysites.com/support/eblasts/images/PT-Hero.png" width="600" alt="" /></a>
+          </td>
+      </tr>
+<!--end full width image-->
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--full width image-->
+      <tr>
+          <td class="full-width-image bodyimg">
+              <a href="#"><img src="https://my.therapysites.com/support/eblasts/jan-2016/images/computer.jpg" width="600" alt="" /></a>
+          </td>
+      </tr>
+<!--end full width image-->
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  
+<!--end hero block-->
+
+<!--color block-->
+  <center class="content-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+
+<!--single column-->
+      <tr>
+        <td class="one-column">
+              <table width="100%">
+                  <tr>
+                      <td class="inner contents maintxt">
+                          <p class="h1">Everything You Need for a Professional Online Presence.</p>
+                          <p>With TherapySites, having a professional and affordable website is easy. We make sure you have everything required to make your online presence a profitable investment for your practice. Every all-inclusive website package comes with all the tools you need to succeed.</p>
+                      </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+<!--end single column-->
+
+<!--left sidebar-->
+      <tr>
+        <td class="left-sidebar">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="100">
+              <![endif]-->
+              <div class="column left">
+                  <table width="100%"> <!--This table contains icons -->
+                      <tr>
+                          <td class="inner">
+                              <img src="https://my.therapysites.com/support/eblasts/jan-2016/images/website.jpg" width="100" alt="" />
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="450">
+              <![endif]-->
+              <div class="column right">
+                  <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                      <tr>
+                          <td class="inner contents">
+                              <p class="h1">$39 Website All Year Long- No Risk! No Contract</p>
+                              <p>That's right - get your website up and running in this new year and enjoy more appointments for an entire year for only $39/month!</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          </td>
+      </tr>
+      <tr>
+        <td class="left-sidebar">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="100">
+              <![endif]-->
+              <div class="column left">
+                  <table width="100%"> <!--This table contains icons -->
+                      <tr>
+                          <td class="inner">
+                              <img src="https://my.therapysites.com/support/eblasts/jan-2016/images/directories.jpg" width="100" alt="" />
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="500">
+              <![endif]-->
+              <div class="column right">
+                  <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                      <tr>
+                          <td class="inner contents">
+                              <p class="h1">100+ Top Ranked Listings - FREE!</p>
+                              <p>Get listed on 100+ top ranked directories and search engines - FREE! We have a team of website experts that are ready to help your practice thrive!</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          </td>
+      </tr>
+      <tr>
+        <td class="left-sidebar">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="100">
+              <![endif]-->
+              <div class="column left">
+                  <table width="100%"> <!--This table contains icons -->
+                      <tr>
+                          <td class="inner">
+                              <img src="https://my.therapysites.com/support/eblasts/jan-2016/images/seo.jpg" width="100" alt="" />
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="500">
+              <![endif]-->
+              <div class="column right">
+                  <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                      <tr>
+                          <td class="inner contents">
+                              <p class="h1">A Search-Optimized Website for More New Clients!</p>
+                              <p>We know what it takes to get to the top of search engines like Google and Bing. Sign up today and we'll include 5 SEO keywords FREE, plus 2 yearly SEO and Google Analytics reviews upon request.</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          </td>
+      </tr>
+      <tr>
+        <td class="left-sidebar">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="100">
+              <![endif]-->
+              <div class="column left">
+                  <table width="100%"> <!--This table contains icons -->
+                      <tr>
+                          <td class="inner">
+                              <img src="https://my.therapysites.com/support/eblasts/jan-2016/images/appointment.jpg" width="100" alt="" />
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="500">
+              <![endif]-->
+              <div class="column right">
+                  <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                      <tr>
+                          <td class="inner contents">
+                              <p class="h1">Get New Appointments - Risk-free!</p>
+                              <p>We guarantee you'll love our service as you watch your website bring you new clients. Take 30 days to try your website risk-free. If you aren't satisfied with the results for any reason, we give you your money back!</p>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          </td>
+      </tr>
+
+<!--end left sidebar-->
+
+<!--single column-->
+      <tr>
+        <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="cta">
+                    <center class="button">
+                      <table width="310" align="center" style="margin: 0 auto;">
+                        <tr>
+                          <td align="center">
+                            <a href="http://www.therapysites.com">ACT NOW & SAVE<br>
+                              <span>$39 a month for a year - Risk FREE</span></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="inner contents cta">
+                        <p>NO SETUP FEE. NO EXTRA CHARGES.</p>
+                        <p class="h1">CALL NOW <a href="#" style="color:#5b86ae;">(866) 288-2771</a></p>
+                        <p>PROMO CODE: <span>2016SPECIAL</span></p>
+                        <p>Offer Expires Jan 31st</p>
+                    </td>
+                </tr>
+              </table>
+          </td>
+      </tr>
+<!--end single column-->
+
+<!--full width image-->
+      <tr>
+          <td class="full-width-image bodyimg">
+              <img src="https://my.therapysites.com/support/eblasts/images/TS-Afflogos.png" width="600" alt="" />
+          </td>
+      </tr>
+<!--end full width image-->
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  
+<!--end color block-->
+
+<!--footer-->
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/therapysites"><img src="http://go.officite.com/eblast/global/white-fb.png" style="height: auto;" alt="Follow TherapySites on Facebook"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/mytherapysites"><img src="http://go.officite.com/eblast/global/white-twitter.png" style="height: auto;" alt="Follow TherapySites on Twitter"></a>&nbsp;&nbsp;&nbsp;
+                
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%">
+                  <tr>
+                  <td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <p>&#169; 2016 TherapySites</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;">Unsubscribe</a> | 
+                          <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;">Update Profile</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+<!--Psy Today disclaimer - remove if you do not have the Psy Today banner in the eblast-->
+              <tr>
+                <td class="hf-columns">
+                  <p>**New Year Special available for new clients only. All clients subject to a 12 month discount maximum.</p>
+                </td>
+              </tr>
+<!--end Psy Today disclaimer-->
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  
+  <center class="footer-address-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+              <tr>
+                <td height="10" class="footer-address"></td>
+              </tr>
+              <tr>
+                <td class="footer-address">
+                  <p>%%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#">(866) 288-2771</a>.<br></p>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <custom name="opencounter" type="tracking">
+<!---end footer-->
+</body>
+</html>

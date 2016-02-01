@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; 
+ padding:0;
+ font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+table { 
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+td{
+  padding: 0;
+}
+img{
+  border:0;
+}
+.imgfix{
+  display: block;
+}
+a{
+  text-decoration: none;
+  color: #000001;
+  font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+p{
+  font-size: 18px;
+  Margin: 0;
+  font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+p.h1 {
+  font-size: 32px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+p.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+.wrapper{
+  width:100%;
+  table-layout: fixed; 
+}
+.webkit {
+  max-width: 600px; 
+  Margin: 0 auto;
+}
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+.left-sidebar:last-child{
+  padding-bottom: 30px;
+}
+.inner {
+  padding: 10px;
+}
+.contents {
+  width: 100%;
+}
+
+
+.prev-text{
+  width:100%;
+  font-size:1px;
+  color:#ffffff;
+  line-height:1px;
+  max-height:1px;
+  overflow:hidden;
+  Margin: 0;
+  padding: 0;
+}
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 297px;
+  display: inline-block;
+  vertical-align: top;
+}
+.header-links {
+  font-size:12px;
+  text-align:center;
+  color:#444444;
+  text-transform:uppercase;
+  padding:22px 10px;
+}
+.header-image{
+  text-align: center;
+}
+.header-image img{
+  height: auto;
+}
+
+.hero-wrapper{
+  background-color:#0076c0;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero-wrapper .outer{
+  background-color: #0076c0;
+}
+.hero2-wrapper{
+  background-color:#fcb32c;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero2-wrapper .outer{
+  background-color: #fcb32c;
+}
+.hero2-wrapper td{
+  line-height:5px;
+}
+
+.cta-wrapper{
+  background-color:#fcb32c;
+  width: 100%;
+  table-layout: fixed;
+}
+.cta-wrapper .outer{
+  background-color:#fcb32c;
+  text-align: center;
+}
+.cta-wrapper p{
+  color:#002c5a;
+  font-weight: normal;
+}
+.cta-wrapper a{
+  color:#002c5a;  
+  font-weight: normal;
+}
+.cta-wrapper .hf-columns td{
+  text-align: center;
+}
+.footer-wrapper{
+  background-color: #0076c0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.footer{
+  background-color: #0076c0;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer a{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer .social{
+  text-align: center;
+}
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  vertical-align:center;
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+}
+.footer-address p{
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+}
+.footer-address a{
+  color:#9E9E9E;
+}
+
+.onecolumn .contents{
+    text-align: center;
+}
+.one-column .contents {
+    text-align: center;
+}
+.onecolumn p{
+    Margin-bottom: 10px;
+}
+.one-column p {
+    Margin-bottom: 10px;
+}
+.wrapper .one-column{
+  padding-top: 30px;
+}
+
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; 
+    height: auto; 
+    Margin: 0 auto;
+    display: block;
+}
+
+.left-sidebar {
+    font-size: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    max-width: 100px;
+}
+.left-sidebar .right {
+    max-width: 497px;
+}
+.left-sidebar img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+.left-sidebar .contents {
+    text-align: left;
+}
+.left-sidebar .right .contents{
+  padding: 0 30px;
+}
+.left-sidebar a {
+    color: #85ab70;
+}
+.left-sidebar p.h1{
+  color: #0076c0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 18px;
+  Margin-bottom: 0;
+}
+
+.hero-wrapper .button td{
+  background-color: #ffffff;
+}
+.hero-wrapper .button a{
+  color: #0076c0;
+}
+.button td{
+  padding:10px 20px;
+  background-color:#002c5b;
+  border-radius: 10px;
+}
+.button a{
+  font-size: 18px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  -webkit-text-size-adjust:none;
+  color:#ffffff;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse !important;}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body style="min-width:100%;background-color:#ffffff;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" >
+  <center class="wrapper" style="width:100%;table-layout:fixed;" >
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;" >
+<!--Preview Text-->
+      <tr>
+        <td class="onecolumn" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                  <tr>
+                    <td class="prev-text" style="width:100%;font-size:1px;color:#ffffff;line-height:1px;max-height:1px;overflow:hidden;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >This Week Only...               
+                    </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+<!--Preview Text-->
+      <!--header-->
+      <tr>
+        <td class="hf-columns" style="text-align:center;font-size:10px;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;" >
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+          <tr>
+          <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+          <![endif]-->
+          <div class="column" style="width:100%;max-width:297px;display:inline-block;vertical-align:top;" >
+            <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+              <tr>
+                <td class="header-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;" >
+                  <a href="http://www.officite.com" style="text-decoration:none;color:#000001;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" ><img src="http://go.officite.com/eblast/global/officite-lg-logo.png" width="300" alt="Officite" style="border-width:0;height:auto;" >
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+          <![endif]-->
+          <div class="column" style="width:100%;max-width:297px;display:inline-block;vertical-align:top;" >
+            <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+              <tr>
+                <td class="inner header-links" style="font-size:12px;text-align:center;color:#444444;text-transform:uppercase;padding-top:22px;padding-bottom:22px;padding-right:10px;padding-left:10px;" >
+                  <a href="http://www.officite.com" style="text-decoration:none;color:#000001;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" >www.Officite.com</a>
+                  &nbsp;| 
+                  <a href="#" style="text-decoration:none;color:#000001;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" >877.895.4011</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--hero block-->
+  <center class="hero-wrapper" style="background-color:#0076c0;width:100%;table-layout:fixed;" ><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;background-color:#0076c0;" >
+        <tr>
+            <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <img src="http://go.officite.com/eblast/2016/01-jan/hero3-dent.jpg" width="600" alt="" style="border-width:0;width:100%;max-width:600px;height:auto;Margin:0 auto;display:block;" />
+            </td>
+        </tr>
+        <tr>
+          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <center class="button">
+              <table align="center" style="margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-collapse:collapse;border-spacing:0px;" >
+                <tr>
+                  <td align="center" style="padding-top:10px;padding-bottom:10px;padding-right:20px;padding-left:20px;border-radius:10px;background-color:#ffffff;" >
+                    <a href="http://go.officite.com/NewYear/new-year.html" style="font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:18px;font-weight:bold;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;color:#0076c0;" >LEARN MORE</a>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="hero2-wrapper" style="background-color:#fcb32c;width:100%;table-layout:fixed;" ><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;line-height:5px;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;background-color:#fcb32c;" >
+        <tr>
+            <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;line-height:5px;" >
+                <img src="http://go.officite.com/eblast/global/swoosh1.jpg" width="600" alt="" style="border-width:0;width:100%;max-width:600px;height:auto;Margin:0 auto;display:block;" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="wrapper" style="width:100%;table-layout:fixed;" ><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;" >
+        <tr>
+            <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <img src="http://go.officite.com/eblast/global/swoosh2.jpg" width="600" alt="" style="border-width:0;width:100%;max-width:600px;height:auto;Margin:0 auto;display:block;" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  
+<!--end hero block-->
+
+<!--color block-->
+  <center class="wrapper" style="width:100%;table-layout:fixed;" >
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;" >
+        <tr>
+          <td class="one-column" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:30px;" >
+                <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                    <tr>
+                        <td class="inner contents" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;width:100%;text-align:center;" >
+                            <p class="h1" style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:32px;font-weight:bold;Margin-bottom:10px;" >Welcome More New Patients at Half the Cost</p>
+                            <p style="font-size:18px;Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;Margin-bottom:10px;" >The 50% off convention-only special is now available to everyone! Half-off pricing is here for 1 week only and applies to <b>all packages,</b> from simple responsive websites to complete online marketing suites. And now, they come with all the new features you see here.</span></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-sidebar" style="font-size:0;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;text-align:center;" >
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                <tr>
+                <td width="100" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                <div class="column left" style="width:100%;display:inline-block;vertical-align:middle;max-width:100px;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" > <!--This table contains icons -->
+                        <tr>
+                            <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                <img src="http://go.officite.com/eblast/2016/01-jan/RTplus-icon2.jpg" width="80" alt="" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="500" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                <div class="column right" style="width:100%;display:inline-block;vertical-align:middle;max-width:497px;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" > <!--This table contains corresponding text, links, buttons, etc. -->
+                        <tr>
+                            <td class="inner contents" style="width:100%;text-align:left;padding-top:0;padding-bottom:0;padding-right:30px;padding-left:30px;" >
+                                <p class="h1" style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;color:#0076c0;text-transform:uppercase;font-weight:normal;font-size:18px;Margin-bottom:0;" >Rep-Tracker Plus</p>
+                                <p style="font-size:18px;Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" >Control your online reputation with review reporting, analysis, and testimonial generation tools.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+        <tr>
+            <td class="left-sidebar" style="font-size:0;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;text-align:center;" >
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                <tr>
+                <td width="100" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                <div class="column left" style="width:100%;display:inline-block;vertical-align:middle;max-width:100px;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" > <!--This table contains icons -->
+                        <tr>
+                            <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                <img src="http://go.officite.com/eblast/2016/01-jan/VTicon2.jpg" width="80" alt="" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="500" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                <div class="column right" style="width:100%;display:inline-block;vertical-align:middle;max-width:497px;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" > <!--This table contains corresponding text, links, buttons, etc. -->
+                        <tr>
+                            <td class="inner contents" style="width:100%;text-align:left;padding-top:0;padding-bottom:0;padding-right:30px;padding-left:30px;" >
+                                <p class="h1" style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;color:#0076c0;text-transform:uppercase;font-weight:normal;font-size:18px;Margin-bottom:0;" >Video Tours</p>
+                                <p style="font-size:18px;Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" >Welcome new patients before they set foot in your office with behind-the-scenes videos on your website.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+        <tr>
+            <td class="left-sidebar" style="font-size:0;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;text-align:center;" >
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                <tr>
+                <td width="100" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                <div class="column left" style="width:100%;display:inline-block;vertical-align:middle;max-width:100px;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" > <!--This table contains icons -->
+                        <tr>
+                            <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                <img src="http://go.officite.com/eblast/2016/01-jan/resp-design-icon2.jpg" width="80" alt="" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="500" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                <div class="column right" style="width:100%;display:inline-block;vertical-align:middle;max-width:497px;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" > <!--This table contains corresponding text, links, buttons, etc. -->
+                        <tr>
+                            <td class="inner contents" style="width:100%;text-align:left;padding-top:0;padding-bottom:0;padding-right:30px;padding-left:30px;" >
+                                <p class="h1" style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;color:#0076c0;text-transform:uppercase;font-weight:normal;font-size:18px;Margin-bottom:0;" >Responsive Designs</p>
+                                <p style="font-size:18px;Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;" >Google's preferred coding style produces websites that perform perfectly on every device.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  
+<!--end color block-->
+
+<!--footer-->
+
+  <center class="cta-wrapper" style="background-color:#fcb32c;width:100%;table-layout:fixed;" >
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;background-color:#fcb32c;text-align:center;" >
+        <tr>
+          <td class="hf-columns" style="text-align:center;font-size:10px;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;" >
+                <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                    <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;" >
+                            <p class="h2" style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:24px;Margin-bottom:12px;color:#002c5a;font-weight:normal;" >Call <a href="#" style="text-decoration:none;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;color:#002c5a;font-weight:normal;" >(877) 898-4046</a> before 1/29 or</p>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;" >
+                        <center class="button">
+                          <table align="center" style="margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;border-collapse:collapse;border-spacing:0px;" >
+                            <tr>
+                              <td align="center" style="padding-top:10px;padding-bottom:10px;padding-right:20px;padding-left:20px;background-color:#002c5b;border-radius:10px;text-align:center;" >
+                                <a href="http://go.officite.com/NewYear/new-year.html" style="font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:18px;font-weight:bold;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;color:#ffffff;" >LEARN MORE</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </center>
+                      </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="footer-wrapper" style="background-color:#0076c0;width:100%;table-layout:fixed;" >
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;" >
+        <tr>
+          <td class="footer" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#0076c0;font-size:12px;color:#ffffff;" >
+            <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+              <tr>
+                <td height="10" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" ></td>
+              </tr>
+              <tr>
+                <td class="inner social" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;text-align:center;" >
+                  <a href="https://www.facebook.com/officite" style="text-decoration:none;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;color:#ffffff;" ><img src="http://go.officite.com/eblast/global/white-fb.png"  alt="Follow Officite on Facebook" style="height:auto;border-width:0;" ></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.officite.com/articles/" style="text-decoration:none;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;color:#ffffff;" ><img src="http://go.officite.com/eblast/global/white-blog.png"  alt="Read Officite's Blog" style="height:auto;border-width:0;" ></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/Officite" style="text-decoration:none;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;color:#ffffff;" ><img src="http://go.officite.com/eblast/global/white-twitter.png"  alt="Follow Officite on Twitter" style="height:auto;border-width:0;" ></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.linkedin.com/company/officite" style="text-decoration:none;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;color:#ffffff;" ><img src="http://go.officite.com/eblast/global/white-linkedin.png"  alt="Connect with Officite on Linked-in" style="height:auto;border-width:0;" ></a>&nbsp;&nbsp;&nbsp;
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns" style="text-align:center;font-size:10px;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;" >
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                  <tr>
+                  <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                  <![endif]-->
+                  <div class="column" style="width:100%;max-width:297px;display:inline-block;vertical-align:top;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;color:#ffffff;" >
+                          <p style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;color:#ffffff;" >&#169; 2016 Officite</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                  <![endif]-->
+                  <div class="column" style="width:100%;max-width:297px;display:inline-block;vertical-align:top;" >
+                    <table width="100%" style="border-collapse:collapse;border-spacing:0px;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;color:#ffffff;" >
+                          <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;" >Unsubscribe</a> | 
+                          <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:12px;" >Update Profile</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </tr>
+        </td>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  
+  <center class="wrapper" style="width:100%;table-layout:fixed;" >
+    <div class="webkit" style="max-width:600px;Margin:0 auto;" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse:collapse;border-spacing:0px;" >
+      <tr>
+      <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <table class="outer" align="center" style="border-collapse:collapse;border-spacing:0px;Margin:0 auto;width:100%;max-width:600px;" >
+              <tr>
+                <td height="10" class="footer-address" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;background-color:#ffffff;line-height:17px;vertical-align:center;font-size:10px;color:#9E9E9E;text-align:center;" ></td>
+              </tr>
+              <tr>
+                <td class="footer-address" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;background-color:#ffffff;line-height:17px;vertical-align:center;font-size:10px;color:#9E9E9E;text-align:center;" >
+                  <p style="Margin:0;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;font-size:10px;color:#9E9E9E;text-align:center;" >%%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#" style="text-decoration:none;font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;color:#9E9E9E;" >(877) 895-4011</a>.<br></p>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <custom name="opencounter" type="tracking">
+<!---end footer-->
+</body>
+</html>

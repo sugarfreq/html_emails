@@ -1,0 +1,662 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; /*capitalize 'M' to keep Outlook from stripping it out*/
+ padding:0;
+ font-family:Verdana, Geneva, sans-serif;
+}
+
+
+table { /*remove cellpadding, cellspacing, and border from tables*/
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+
+td{
+  padding: 0;
+}
+
+img{
+  border:0;
+}
+
+.imgfix{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #000001;
+ font-family:Verdana, Geneva, sans-serif;
+}
+p{
+  font-size: 18px;
+  Margin: 0;
+ font-family:Verdana, Geneva, sans-serif;
+}
+
+.h1 {
+  font-size: 21px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+
+.wrapper{
+  width:100%;
+  table-layout: fixed; /*ensure centered content is centered in yahoo*/
+}
+.hero-wrapper{
+  background-color:#cfe0ee;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero-wrapper{
+  background-color:#cfe0ee;
+}
+.cta-wrapper{
+  background-color:#fcb32c;
+  width: 100%;
+  table-layout: fixed;
+}
+.cta-wrapper .outer{
+  background-color:#fcb32c;
+}
+.webkit {
+  max-width: 600px; /*contain in Apple Mail 6 and Outlook 2011*/
+}
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inner {
+  padding: 10px;
+}
+
+.contents {
+width: 100%;
+}
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 297px;
+  display: inline-block;
+}
+.hf-columns .header-links{
+  padding: 22px 10px;
+}
+.header-links{
+  font-size:12px;
+  text-align:center;
+  color:#49196f;
+  text-transform:uppercase;
+}
+.header-image{
+  text-align: center;
+}
+.hero2-wrapper{
+  background-color:#ffb12e;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero2-wrapper .outer{
+  background-color: #ffb12e;
+}
+.hero2-wrapper td{
+  line-height:5px;
+}
+.footer-wrapper{
+  background-color:#0076c0;
+  width: 100%;
+  table-layout: fixed;
+}
+.footer{
+  background-color: #0076c0;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  text-align: center;
+  color: #ffffff;
+}
+.footer a{
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer .social{
+  text-align: center;
+}
+
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+  vertical-align:center;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+.footer-wrapper .full-width-image{
+  padding: 20px 0;
+}
+.footer-wrapper .outer{
+  background-color: #0076c0;
+}
+.two-column {
+    text-align: center;
+}
+
+.two-column .column {
+    width: 100%;
+    max-width: 215px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #cfe0ee;
+    Margin: 10px 20px;
+}
+.two-column .column .inner{
+  padding-top: 20px;
+}
+.two-column img {
+    height: auto;
+    margin: 0 auto;
+}
+.two-column td{
+  text-align: center;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+.button td{
+  padding:5px 10px;
+  background-color: #fcb32c;
+  border-radius: 10px;
+}
+
+.button a{
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  font-family:Verdana, Geneva, sans-serif;
+  -webkit-text-size-adjust:none;
+  color:#343434;
+}
+.one-column .contents {
+    text-align: center;
+    padding: 20px;
+}
+.one-column p {
+    Margin-bottom: 10px;
+    color: #002c5a;
+}
+.one-column .h1{
+  font-size: 30px;
+}
+.cta-wrapper .one-column p{
+  text-align: center;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+      
+      <!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.officite.com"><img src="http://go.officite.com/eblast/global/officite-lg-logo.png" alt="Officite" width="300" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.officite.com">www.Officite.com</a>
+                  &nbsp;| 
+                  <a href="#">855.731.3026</a>
+                  &nbsp;&nbsp;&nbsp;
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--content-->
+  <center class="hero-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/2016/01-jan/header2.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+                  <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/2016/01-jan/you-us-lg.png" width="600" alt="" />
+            </td>
+        </tr>
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+    <center class="hero2-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/2016/01-jan/swoosh1.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/2016/01-jan/swoosh2.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <img src="http://go.officite.com/eblast/2016/01-jan/headline1.png" alt="Update Today" />
+                            <p>Update your website before January 15th to a Responsive Design and add Video Tours and you can save 50%. Find out how Responsive Design and Video Tours can help your website out.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+          <td class="two-column">
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%">
+                <tr>
+                <td width="50%" valign="top">
+                <![endif]-->
+                <div class="column">
+                  <table width="100%">
+                    <tr>
+                        <td class="inner">
+                            <!--You can change out this content for what you need. The following will create an image with text underneath.-->
+                            <table class="contents">
+                              <tr><!--Delete this whole row (<tr> to </tr>) if you just want text in this section-->
+                                    <td>
+                                          <img src="http://go.officite.com/eblast/2016/01-jan/resp-icon.png" width="100" alt="" />
+<!--Start DELETE THIS SECTION IF THERE IS NO PAGE TO LINK TO-->
+                                          <center class="button">
+                                            <table align="center" style="margin: 0 auto;">
+                                              <tr>
+                                                <td align="center">
+                                                  <a href="http://go.officite.com/New-Years/new-year.html?dental">Learn More</a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </center>
+<!--End DELETE THIS SECTION IF THERE IS NO PAGE TO LINK TO-->
+                                    </td>
+                              </tr>
+                              <tr><!--Delete this whole row (<tr> to </tr>) if you just want an image in this section-->
+                                    <td class="text">
+                                          <p>Responsive design ensures perfect performance across all devices, from computers to smartphones and tablets. </p>
+                                    </td>
+                              </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="http://go.officite.com/eblast/2016/01-jan/box-bottom.png" width="215" alt="" />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="50%" valign="top">
+                <![endif]-->
+                <div class="column">
+                  <table width="100%">
+                    <tr>
+                        <td class="inner">
+                            <!--You can change out this content for what you need. The following will create an image with text underneath.-->
+                            <table class="contents">
+                              <tr><!--Delete this whole row (<tr> to </tr>) if you just want text in this section-->
+                                    <td>
+                                          <img src="http://go.officite.com/eblast/2016/01-jan/vid-icon.png" width="140" alt="" />
+<!--Start DELETE THIS SECTION IF THERE IS NO PAGE TO LINK TO-->
+                                          <center class="button">
+                                            <table align="center" style="margin: 0 auto;">
+                                              <tr>
+                                                <td align="center">
+                                                  <a href="http://www.gilbertdental.com/">View Demo</a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </center>
+<!--End DELETE THIS SECTION IF THERE IS NO PAGE TO LINK TO-->
+                                    </td>
+                              </tr>
+                              <tr><!--Delete this whole row (<tr> to </tr>) if you just want an image in this section-->
+                                    <td class="text">
+                                          <p>Build a video tour of your practice to welcome patients before their first visit. All you need is a phone with a camera.</p>
+                                    </td>
+                              </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="http://go.officite.com/eblast/2016/01-jan/box-bottom.png" width="215" alt="" />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+          </td>
+        </tr>
+        <tr>
+          <td height="20">
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="cta-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p>Call Today to get up to 50% off a newer, better website.</p>
+                            <p class="h1"><a href="#" style="color:#002c5a;">(855) 731-3026</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end content-->
+
+<!--footer-->
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/officite"><img src="http://resources.officite.com/eblast/global/facebook-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.officite.com/articles/"><img src="http://resources.officite.com/eblast/global/blog-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/Officite"><img src="http://resources.officite.com/eblast/global/twitter-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.linkedin.com/company/officite"><img src="http://resources.officite.com/eblast/global/linkedin-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%">
+                  <tr>
+                  <td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <p>&#169; 2015 Officite</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;">Unsubscribe</a> | 
+                          <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;">Update Profile</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </tr>
+        </td>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+              <tr>
+                <td height="10" class="footer-address"></td>
+              </tr>
+              <tr>
+                <td class="footer-address">
+                  %%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#" style="color:#9E9E9E;">(877) 895-4011</a>.<br>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+<!---end footer-->
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+</body>
+</html>

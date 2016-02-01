@@ -1,0 +1,640 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; /*capitalize 'M' to keep Outlook from stripping it out*/
+ padding:0;
+ font-family:Verdana, Geneva, sans-serif;
+}
+table { /*remove cellpadding, cellspacing, and border from tables*/
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+td{
+  padding: 0;
+}
+img{
+  border:0;
+}
+.imgfix{
+  display: block;
+}
+a{
+  text-decoration: none;
+  color: #000001;
+  font-family:Verdana, Geneva, sans-serif;
+}
+p{
+  Margin: 0;
+  font-family:Verdana, Geneva, sans-serif;
+}
+.h1 {
+  font-size: 21px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+.wrapper{
+  width:100%;
+  table-layout: fixed; /*ensure centered content is centered in yahoo*/
+}
+.hero1-wrapper{
+  background-color:#69be41;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero1-wrapper .outer{
+  background-color:#69be41;
+}
+.hero2-wrapper{
+  background-color:#f7a329;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero2-wrapper .outer{
+  background-color:#f7a329;
+}
+.content-wrapper{
+  background-color:#4172aa;
+  width: 100%;
+  table-layout: fixed;
+}
+.content-wrapper .outer{
+  background-color:#4172aa;
+}
+.webkit {
+  max-width: 600px; /*contain in Apple Mail 6 and Outlook 2011*/
+}
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+.inner {
+  padding: 10px;
+}
+.contents {
+  width: 100%;
+}
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+.hf-columns .column {
+  width: 100%;
+  max-width: 297px;
+  display: inline-block;
+  vertical-align: top;
+}
+.header-links{
+  font-size:12px;
+  text-align:center;
+  color:#49196f;
+  text-transform:uppercase;
+}
+.header-image{
+  text-align: center;
+}
+.header-image img{
+  height: auto;
+}
+.footer-wrapper{
+  background-color: #69be41;
+  width: 100%;
+  table-layout: fixed;
+}
+.footer-address-wrapper{
+  background-color: #ffffff;
+  width: 100%;
+  table-layout: fixed;
+}
+.footer{
+  background-color: #69be41;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer a{
+  color: #ffffff;
+}
+.footer .social{
+  text-align: center;
+}
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+  vertical-align:center;
+}
+.footer .h1{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  Margin-bottom: 0;
+  Margin-top: 10px;
+}
+.footer .hf-columns{
+  padding: 0 0 20px 0;
+}
+.one-column .contents {
+    text-align: center;
+}
+.one-column p {
+    font-size: 16px;
+    Margin-bottom: 10px;
+    color: #4172aa;
+}
+.one-column a{
+  color:#4172aa;
+}
+.one-column .h1{
+  font-size: 35px;
+  font-weight: normal;
+}
+.one-column img{
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+.wrapper .one-column{
+  padding:30px 20px;
+}
+
+.hero1-wrapper .one-column{
+  padding-top: 20px;
+}
+.hero1-wrapper .one-column p {
+    font-size: 16px;
+    Margin-bottom: 10px;
+    color: #ffffff;
+}
+.hero1-wrapper .one-column .h1{
+  font-size: 35px;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+.two-column {
+    text-align: center;
+    padding: 30px 0;
+}
+.two-column .column {
+    width: 100%;
+    max-width: 297px;
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .contents {
+    font-size: 14px;
+    text-align: left;
+}
+.two-column img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+    Margin: 0 auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+.two-column p{
+  color: #ffffff;
+  font-size: 16px;
+}
+.two-column .h1{
+  font-size: 26px;
+}
+.button td{
+  padding:10px 15px;
+  background-color: #f7a329;
+  border-radius: 10px;
+}
+
+.button a{
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  font-family:Verdana, Geneva, sans-serif;
+  -webkit-text-size-adjust:none;
+  padding: 4px 6px;
+  color:#13487f;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+      
+<!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.OnlinePodiatrySites.com"><img src="http://www.testbaystone.com/userfiles/13144/upload/images/OPS-color-hlogo.png" width="300" alt="Online Podiatry Sites">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.OnlinePodiatrySites.com">www.OnlinePodiatrySites.com</a>
+                  &nbsp;<br>
+                  <a href="#">855.609.3927</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--content-->
+  <center class="hero1-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1">Your Website, Your Price</p>
+                            <img src="http://www.testbaystone.com/userfiles/13144/upload/jan_2016/hero1-pod.png" width="600" alt="Mountain Ridge design">
+                            <p>for your first 2 months.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="hero2-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image" style="line-height:5px;">
+                <img src="http://www.testbaystone.com/userfiles/13144/upload/jan_2016/hero2-pod.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="http://www.testbaystone.com/userfiles/13144/upload/jan_2016/hero3-pod.jpg" width="600" alt="" />
+            </td>
+        </tr>
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1">How much? You tell us!</p>
+                            <p>Website setup is always free with us, but this January we're letting you pick your own monthly rate too! $10? Cool. $5? Great. $1? Heck yeah. Go ahead, pay whatever you want. We'd accept Monopoly money if we could, but the accountants don’t like that.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <center class="button">
+                          <table align="center" style="margin: 0 auto;">
+                            <tr>
+                              <td align="center">
+                                <a href="http://www.OnlinePodiatrySites.com/jan_2016/">Learn More</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </center>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="20">
+                      </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="content-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="two-column">
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%">
+                <tr>
+                <td width="50%" valign="top">
+                <![endif]-->
+                <div class="column">
+              <table width="100%">
+                    <tr>
+                        <td class="inner">
+                            <table class="contents">
+                        <tr>
+                              <td>
+                                    <img src="http://www.testbaystone.com/userfiles/13144/upload/jan_2016/icons.png" alt="" />
+                              </td>
+                        </tr>
+                    </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="50%" valign="top">
+                <![endif]-->
+                <div class="column">
+                  <table width="100%">
+                        <tr>
+                            <td class="inner">
+                                <table class="contents">
+                                  <tr>
+                                        <td class="text">
+                                              <p class="h1">Pick a Package, Any Package</p>
+                                              <p>From stand-alone websites to fully-loaded marketing platforms, we've got something for every practice on any budget. Get started at the rate you choose today.</p>
+                                        </td>
+                                  </tr>
+                              </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p>Call your Website Consultant to name your price today!</p>
+                            <p class="h1"><a href="#">(855)506-3927</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end content-->
+
+<!--footer-->
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="h1">No Setup. No Contract. No Worries</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/OnlinePodiatrySites"><img src="http://resources.officite.com/eblast/global/facebook-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/online_podiatry"><img src="http://resources.officite.com/eblast/global/twitter-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%">
+                  <tr>
+                  <td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <p>&#169; *|CURRENT_YEAR|* Online Podiatry Sites</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <a href="*|ABOUT_LIST|*" target="_blank" style="color:#ffffff !important;"><em>why did I get this?</em></a>    <a href="*|UNSUB|*" style="color:#ffffff !important;">unsubscribe from this list</a>    <a href="*|UPDATE_PROFILE|*" style="color:#ffffff !important;">update subscription preferences</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  
+  <center class="footer-address-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+              <tr>
+                <td height="10" class="footer-address"></td>
+              </tr>
+              <tr>
+                <td class="footer-address">
+                  *|LIST:COMPANY|*<br>
+                  *|LIST:ADDRESS|*<br>
+                  Questions or concerns? Contact us at <a href="#" style="color:#9E9E9E;">(866) 288-2771</a>.<br>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+<!---end footer-->
+    </div>
+  </center>
+</body>
+</html>

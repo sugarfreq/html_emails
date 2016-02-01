@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+/*
+------------------------
+    Base Email Styles
+-------------------------
+*/
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; /*capitalize 'M' to keep Outlook from stripping it out*/
+ padding:0;
+ font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+
+table { /*remove cellpadding, cellspacing, and border from tables*/
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+
+td{
+  padding: 0;
+}
+
+img{
+  border:0;
+}
+
+.imgfix{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #000001;
+  font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+p{
+  font-size: 18px;
+  Margin: 0;
+  font-family:'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+p.h1 {
+  font-size: 32px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+
+p.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+
+.wrapper{
+  width:100%;
+  table-layout: fixed; /*ensure centered content is centered in yahoo*/
+}
+.webkit {
+  max-width: 600px; /*contain in Apple Mail 6 and Outlook 2011*/
+}
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inner {
+  padding: 10px;
+}
+
+.contents {
+  width: 100%;
+}
+/*
+----------------------------
+      Header Styles
+-----------------------------
+*/
+.prev-text{
+  width:100%;
+  font-size:1px;
+  color:#ffffff;
+  line-height:1px;
+  max-height:1px;
+  overflow:hidden;
+}
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 297px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-links{
+  font-size:12px;
+  text-align:center;
+  color:#444444;
+  text-transform:uppercase;
+  padding:22px 10px;
+}
+.header-image{
+  text-align: center;
+}
+.header-image img{
+  height: auto;
+}
+/*
+----------------------------
+       Hero Styles
+-----------------------------
+*/
+.hero-wrapper{
+  background-color:#0076c0;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero-wrapper .outer{
+  background-color: #0076c0;
+}
+.hero-wrapper .one-column p{
+  color: #ffffff;
+  text-align: center;
+}
+.hero2-wrapper{
+  background-color:#fcb32c;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero2-wrapper .outer{
+  background-color: #fcb32c;
+}
+.hero2-wrapper td{
+  line-height:5px;
+}
+.hero3-wrapper{
+  background-color:#ffffff;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero3-wrapper .outer{
+  background-color: #ffffff;
+}
+/*
+----------------------------
+       Footer Styles
+-----------------------------
+*/
+.cta-wrapper{
+  background-color:#fcb32c;
+  width: 100%;
+  table-layout: fixed;
+}
+.cta-wrapper .outer{
+  background-color:#fcb32c;
+  text-align: center;
+}
+.cta-wrapper p{
+  color:#002c5a;
+  font-weight: normal;
+  Margin: 5px 0;
+}
+.cta-wrapper a{
+  font-size: 32px;
+  color:#002c5a;  
+  font-weight: normal;
+}
+.footer-wrapper{
+  background-color: #0076c0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.footer{
+  background-color: #0076c0;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer a{
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer .social{
+  text-align: center;
+}
+
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  vertical-align:center;
+}
+.footer-address p{
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+}
+.footer-address a{
+  font-size:10px;
+  color:#9E9E9E;
+}
+/*
+----------------------------
+  1. Single Column Styles
+-----------------------------
+*/
+.wrapper .one-column{
+  padding-top: 30px;
+}
+.one-column .contents {
+    text-align: center;
+}
+.one-column p {
+    Margin-bottom: 10px;
+}
+.one-column p.h2{
+  color: #0076c0;
+  font-weight: normal;
+}
+.wrapper .one-column p.h1{
+  color: #0076c0;
+  font-weight: normal;
+  font-size: 30px;
+}
+/*
+----------------------------
+  2. Full Width Image Banner
+-----------------------------
+*/
+.wrapper .full-width-image{
+  padding-top: 30px;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+/*
+-----------------------------------------------
+   6. Left Sidebar & 7. Right Sidebar Styles
+-----------------------------------------------
+*/
+.left-sidebar {
+    text-align: center;
+    font-size: 0;
+    border-bottom: 1px solid #a9c5d5;
+    padding-bottom: 30px;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    max-width: 200px;
+}
+.left-sidebar .right {
+    max-width: 400px;
+}
+.left-sidebar img {
+    width: 100%;
+    max-width: 173px;
+    height: auto;
+}
+.left-sidebar .contents {
+    text-align: center;
+}
+.left-sidebar a {
+    color: #ffffff;
+}
+.hero-wrapper .left-sidebar img {
+    width: 100%;
+    height: auto;
+}
+.hero-wrapper .left-sidebar{
+    border-bottom: none;
+}
+.hero-wrapper .left-sidebar p.h1 {
+    font-size: 24px;
+}
+/*
+-----------------------
+   8. Button Styles
+-----------------------
+*/
+
+.button td{
+  padding:10px 20px;
+  background-color:#fcb32c;
+  border-radius: 10px;
+}
+.button a{
+  font-size: 18px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  -webkit-text-size-adjust:none;
+  color:#000001;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--Preview Text-->
+      <tr>
+        <td class="prev-text">Open to see the show specials for the 2016 New York Podiatric Clinical Conference and Exhibition!
+        </td>
+      </tr>
+<!--Preview Text-->
+      <!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.officite.com"><img src="http://go.officite.com/eblast/global/officite-lg-logo.png" width="300" alt="Officite">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.officite.com">www.Officite.com</a>
+                  &nbsp;| 
+                  <a href="#">877.895.4011</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--hero block-->
+  <center class="hero-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="left-sidebar">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%">
+                            <tr>
+                            <td width="200">
+                            <![endif]-->
+                            <div class="column left">
+                                <table width="100%"> <!--This table contains icons -->
+                                    <tr>
+                                        <td class="inner">
+                                            <img src="http://go.officite.com/eblast/tradeshows/nyspma_logo.png" alt="2016 New York Podiatric Clinical Conference and Exhibition"  />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="400">
+                            <![endif]-->
+                            <div class="column right">
+                                <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                                    <tr>
+                                        <td class="inner contents">
+                                            <p class="h1">2016 New York Podiatric Clinical Conference and Exhibition
+                                              <br><a href="#">January 22nd - 24th</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1">Visit Booth #A13 for a Chance to Win an Apple Watch!</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <center class="button">
+              <table align="center" style="margin: 0 auto;">
+                <tr>
+                  <td align="center">
+                    <a href="http://officitewebpresence.instapage.com/">Reserve a Timeslot</a>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="hero2-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/2016/01-jan/swoosh1.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="hero3-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/2016/01-jan/swoosh2.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  
+<!--end hero block-->
+
+<!--color block-->
+  <center class="wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1">Meet Vanessa Your Web Presence Advisor</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="left-sidebar">
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%">
+                <tr>
+                <td width="200">
+                <![endif]-->
+                <div class="column left">
+                    <table width="100%"> <!--This table contains icons -->
+                        <tr>
+                            <td class="inner">
+                                <img src="http://go.officite.com/eblast/tradeshows/vanessa-circle.png" alt="Meet Vanessa"  width="173" alt="" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td><td width="400">
+                <![endif]-->
+                <div class="column right">
+                    <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                        <tr>
+                            <td class="inner contents">
+                                <p>Vanessa's here all weekend to help make your online marketing the best it can be. Stop by booth #A13 to take advantage of the show special: a chance to win an Apple Watch.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+
+        <tr>
+            <td class="full-width-image">
+                <img src="http://go.officite.com/eblast/tradeshows/bismark-podiatry-screens.jpg" width="600" alt="" />
+            </td>
+        </tr>
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h2">Come to booth #A13 with all your online marketing questions, leave with the solutions your practice needs.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+  
+<!--end color block-->
+
+<!--footer-->
+
+  <center class="cta-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="hf-columns">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <p class="h2">Take advantage of the show special today!</p>
+                            <p class="h1">a Chance to win an Apple Watch</p>
+                            <p>only at Booth #A13</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/officite"><img src="http://go.officite.com/eblast/global/white-fb.png" style="height: auto;" alt="Follow Officite on Facebook"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.officite.com/articles/"><img src="http://go.officite.com/eblast/global/white-blog.png" style="height: auto;" alt="Read Officite's Blog"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/Officite"><img src="http://go.officite.com/eblast/global/white-twitter.png" style="height: auto;" alt="Follow Officite on Twitter"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.linkedin.com/company/officite"><img src="http://go.officite.com/eblast/global/white-linkedin.png" style="height: auto;" alt="Connect with Officite on Linked-in"></a>&nbsp;&nbsp;&nbsp;
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%">
+                  <tr>
+                  <td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <p>&#169; 2016 Officite</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;">Unsubscribe</a> | 
+                          <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;">Update Profile</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </tr>
+        </td>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+              <tr>
+                <td height="10" class="footer-address"></td>
+              </tr>
+              <tr>
+                <td class="footer-address">
+                  <p>%%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#" style="color:#9E9E9E;">(877) 895-4011</a>.<br></p>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <custom name="opencounter" type="tracking">
+<!---end footer-->
+</body>
+</html>

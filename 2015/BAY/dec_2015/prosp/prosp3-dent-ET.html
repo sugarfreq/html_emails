@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="styles-base.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; /*capitalize 'M' to keep Outlook from stripping it out*/
+ padding:0;
+ font-family:Verdana, Geneva, sans-serif;
+}
+
+
+table { /*remove cellpadding, cellspacing, and border from tables*/
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+
+td{
+  padding: 0;
+}
+
+img{
+  border:0;
+}
+
+.imgfix{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #4f4f4f;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+p{
+  Margin: 0;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif;
+}
+
+.h1 {
+  font-size: 21px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+
+.wrapper{
+  width:100%;
+  table-layout: fixed;
+}
+.hero1-wrapper{
+  width:100%;
+  table-layout: fixed; 
+  background-color:#ebeded;
+}
+.hero2-wrapper{
+  width:100%;
+  table-layout: fixed; 
+  background-color:#f7a329;
+}
+.footer-wrapper{
+  width:100%;
+  table-layout: fixed; 
+  background-color:#1d4373;
+}
+.footer-wrapper table{
+  background-color:#1d4373;
+}
+.webkit {
+  max-width: 600px; /*contain in Apple Mail 6 and Outlook 2011*/
+}
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inner {
+  padding: 10px;
+}
+
+.contents {
+  width: 100%;
+}
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 297px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-links{
+  font-size:12px;
+  text-align:center;
+  color:#49196f;
+  text-transform:uppercase;
+}
+.header-links p{
+  font-size:12px;
+  color:#49196f;
+}
+.header-image{
+  text-align: center;
+}
+
+.header-image img{
+  height: auto;
+}
+
+.footer{
+  background-color: #214570;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer a{
+  color: #ffffff;
+}
+
+.footer .social{
+  text-align: center;
+}
+
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+  vertical-align:center;
+}
+.footer-address p{
+  line-height:17px;
+  font-size:10px;
+  color:#9E9E9E;
+}
+
+.footer .h1{
+  text-align: center;
+  color: #f7a329;
+  font-size: 16px;
+  Margin-bottom: 0;
+  Margin-top: 10px;
+}
+
+.footer .hf-columns{
+  padding: 0 0 20px 0;
+}
+.one-column .contents {
+    text-align: center;
+}
+.one-column p {
+    font-size: 16px;
+    Margin-bottom: 10px;
+}
+.one-column p.h1 {
+    font-size: 24px;
+    Margin-bottom: 16px;
+    font-weight: normal;
+}
+.footer-wrapper .one-column .contents{
+  padding: 20px 23px;
+}
+.footer-wrapper .one-column .contents p{
+  color: #ffffff;
+  line-height: 24px;
+}
+.wrapper .one-column .contents{
+  padding: 30px 30px;
+}
+.wrapper .one-column .contents p{
+  color:#4f4f4f;
+}
+
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+.button td{
+  padding:10px 15px;
+  background-color: #f7a329;
+}
+
+.button a{
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  font-family:Verdana, Geneva, sans-serif;
+  -webkit-text-size-adjust:none;
+  padding: 4px 6px;
+  color:#13487f;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+      
+<!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.theonlinepractice.com"><img src="http://www.testbaystone.com/userfiles/13144/upload/images/TOP-color-hlogo.png" width="300" alt="The Online Practice">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.theonlinepractice.com">www.TheOnlinePractice.com</a>
+                  &nbsp;<br>
+                  <a href="#">855.609.3927</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </div>
+</center>
+<!--end header-->
+  <center class="hero1-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <a href="http://www.theonlinepractice.com/dec_2015"><img src="http://www.testbaystone.com/userfiles/13144/upload/dec_2015/prosp3-header1-dent.jpg" width="600" alt="" /></a>
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="hero2-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image" style="line-height: 5px">
+                <a href="http://www.theonlinepractice.com/dec_2015"><img src="http://www.testbaystone.com/userfiles/13144/upload/dec_2015/prosp3-header2-dent.jpg" width="600" alt="" /></a>
+            </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+    <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <a href="http://www.theonlinepractice.com/dec_2015"><img src="http://www.testbaystone.com/userfiles/13144/upload/dec_2015/prosp3-header3.jpg" width="600" alt="" /></a>
+            </td>
+        </tr>
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1">Don’t miss your last chance to save big before the end of the year.</p>
+                            <p>I dont want a scandal, do I? We had had a very humiliating public confrontation. He was deranged. He was a lunatic! He didn't actually seem to like me very much; he had threatened to kill me in public.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <center class="button">
+              <table align="center" style="margin: 0 auto;">
+                <tr>
+                  <td align="center">
+                    <a href="http://www.theonlinepractice.com/dec_2015">LEARN MORE</a>
+                  </td>
+                </tr>
+              </table>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td height="20">
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+<center class="wrapper">
+  <div class="webkit">
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+    <tr>
+    <td>
+    <![endif]-->
+    <table class="outer" align="center">
+      <tr>
+        <td class="one-column">
+              <table width="100%">
+                  <tr>
+                      <td class="inner contents">
+                          <p>Why would he wanna kill you in public? I think she meant he threatened, in public, to kill her.</p>
+                          <p class="h1"><a href="#" style="color:#4f4f4f;">(855) 609-3927</a></p>
+                      </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+    </table>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </div>
+</center>
+
+<!--footer-->
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="h1">No Setup. No Contract. No Worries</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/TheOnlinePractice"><img src="http://resources.officite.com/eblast/global/facebook-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/online_practice"><img src="http://resources.officite.com/eblast/global/twitter-icon-white.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%">
+                  <tr>
+                  <td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <p>&#169; 2015 The Online Practice</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;">Unsubscribe</a> | 
+                          <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;">Update Profile</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+              <tr>
+                <td height="10" class="footer-address"></td>
+              </tr>
+              <tr>
+                <td class="footer-address">
+                  %%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#" style="color:#9E9E9E;">(855) 609-3927</a>.<br>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+<!---end footer-->
+    </div>
+  </center>
+</body>
+</html>
