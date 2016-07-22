@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="OFF-styles-base.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+/*
+---------------------
+    Variables
+---------------------
+*/
+/*
+------------------------
+    Base Email Styles
+-------------------------
+*/
+body {
+  min-width: 100%;
+  background-color: #ffffff;
+  Margin: 0;
+  /*capitalize 'M' to keep Outlook from stripping it out*/
+  padding: 0;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif; }
+
+table {
+  /*remove cellpadding, cellspacing, and border from tables*/
+  border-collapse: collapse;
+  border-spacing: 0px; }
+
+td {
+  padding: 0; }
+
+img {
+  border: 0; }
+
+.imgfix {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #000001;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif; }
+
+p {
+  font-size: 18px;
+  Margin: 0;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif; }
+
+p.h1 {
+  font-size: 24px;
+  Margin-bottom: 18px; }
+
+p.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  Margin-bottom: 12px; }
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  /*ensure centered content is centered in yahoo*/ }
+
+.webkit {
+  max-width: 600px;
+  /*contain in Apple Mail 6 and Outlook 2011*/
+  Margin: 0 auto; }
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px; }
+
+.inner {
+  padding: 20px; }
+
+.contents {
+  width: 100%; }
+
+/*
+----------------------------
+      Header Styles
+-----------------------------
+*/
+.prev-text {
+  width: 100%;
+  font-size: 1px;
+  color: #0076c0;
+  line-height: 1px;
+  max-height: 1px;
+  overflow: hidden; }
+
+.hf-columns {
+  text-align: center;
+  font-size: 0;
+  padding: 10px 0; }
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top; }
+
+.header-links {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 22px 10px; }
+
+.header-links a{
+  color: #fff;
+  font-size: 12px;
+}
+
+.header-image {
+  text-align: center; }
+
+.header-image img {
+  height: auto; }
+
+/*
+----------------------------
+       Hero Styles
+-----------------------------
+*/
+.header-wrapper {
+  background-color: #0076c0;
+  width: 100%;
+  table-layout: fixed; }
+
+.header-wrapper .outer {
+  background-color: #0076c0; }
+
+/*
+----------------------------
+       Footer Styles
+-----------------------------
+*/
+.footer-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  table-layout: fixed; }
+
+.footer-wrapper {
+  background-color: #ffffff;
+  font-size: 12px;
+  color: #9e9e9e;
+  text-align: center; }
+
+.footer-wrapper td {
+  text-align: center; }
+
+.footer-wrapper p {
+  font-size: 12px;
+  color: #9e9e9e;
+  text-align: center; }
+
+.footer-wrapper a {
+  font-size: 12px;
+  color: #0075bf; }
+
+.footer-wrapper p.h1 {
+  font-size: 18px; }
+
+.footer-wrapper .social {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;}
+
+.footer-wrapper .column td {
+  text-align: center;
+  color: #9e9e9e; }
+
+.footer-address {
+  margin: 0 auto;
+  background-color: #ffffff;
+  line-height: 17px;
+  vertical-align: center;
+  font-size: 10px;
+  color: #9E9E9E;
+  text-align: center; }
+
+.footer-address p {
+  font-size: 10px;
+  color: #9E9E9E;
+  text-align: center; }
+
+.footer-address a {
+  color: #9E9E9E; }
+
+/*
+----------------------------
+  1. Single Column Styles
+-----------------------------
+*/
+.one-column .contents {
+  text-align: right; }
+
+.one-column p {
+  Margin-bottom: 10px; }
+
+/*
+----------------------------
+  2. Full Width Image Banner
+-----------------------------
+*/
+.one-column img {
+  width: 100%;
+  max-width: 450px;
+  /*set to match full width of table to ensure proper size on Windows Phone*/
+  height: auto;
+  /*ensure proper aspect ratio across all clients*/}
+
+
+
+/*
+-----------------------------------------------
+   6. Left Sidebar & 7. Right Sidebar Styles
+-----------------------------------------------
+*/
+.left-sidebar {
+  font-size: 0;
+  text-align: right;}
+
+.left-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;}
+.left-sidebar p{
+  color: #000000;
+}
+
+.left-sidebar .right1 {
+  max-width: 450px;}
+
+.left-sidebar .left1 {
+  max-width: 150px;
+  height:100px;}
+
+.left-sidebar .left2 {
+  max-width: 150px;
+  height:10px;}
+
+.left-sidebar img {
+  width: 100%;
+  max-width: 450px;
+  height: auto; }
+
+.left-sidebar .contents {
+  font-size: 18px;
+  text-align: center; }
+
+/*
+-----------------------
+   8. Button Styles
+-----------------------
+*/
+.button{
+  padding: 10px 0 50px 0;
+}
+.button td {
+  background-color:#f6ab1e;
+  padding: 10px 20px;
+}
+
+.button a {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  -webkit-text-size-adjust: none;
+  color: #002c5b;
+  padding: 10px 20px;}
+
+.button p{
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=OFF-styles-base.css.map */
+
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+  <center class="header-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--Preview Text-->
+      <tr>
+        <td>
+              <table width="100%">
+                  <tr>
+                    <td class="prev-text">Strengthen your name with Officite
+                    </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+<!--Preview Text-->
+      <!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.officite.com" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/officite-lg-logo-invert.png" width="300" alt="Officite">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.officite.com" target="_blank">www.Officite.com</a>
+                  &nbsp;|
+                  <a href="#">877.895.4011</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--hero block-->
+  <center class="wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td background="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-RepTracker/bkgrd.jpg" bgcolor="#d7ecf7" width="601" valign="top">
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:601px;">
+              <v:fill type="tile" src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-RepTracker/bkgrd.jpg" color="#d7ecf7" />
+              <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+            <div>
+            <table class="outer">
+              <tr>
+                  <td class="left-sidebar">
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%">
+                      <tr>
+                      <td width="100">
+                      <![endif]-->
+                      <div class="column left1">
+                          <table width="100%"> <!--This table contains icons -->
+                              <tr>
+                                  <td class="inner">
+                                  </td>
+                              </tr>
+                          </table>
+                      </div>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="500">
+                      <![endif]-->
+                      <div class="column right1">
+                          <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                              <tr><td height="30"></td></tr>
+                              <tr>
+                                <td class="contents">
+                                    <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-RepTracker/herotxt.png" width="450" alt="An Online Reputation you
+    can be confident in" style=”font-family:Trebuchet,sans-serif;color:#002c5b;font-size:30px;” />
+                                </td>
+                              </tr>
+                              <tr><td height="10"></td></tr>
+                          </table>
+                      </div>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                  </td>
+              </tr>
+              <tr>
+                  <td class="left-sidebar">
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%">
+                      <tr>
+                      <td width="100">
+                      <![endif]-->
+                      <div class="column left2">
+                          <table width="100%"> <!--This table contains icons -->
+                              <tr>
+                                  <td class="inner">
+                                  </td>
+                              </tr>
+                          </table>
+                      </div>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="500">
+                      <![endif]-->
+                      <div class="column right1">
+                          <table width="100%"> <!--This table contains corresponding text, links, buttons, etc. -->
+                              <tr>
+                                <td background="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-RepTracker/opbkgrd.png" width="97" valign="top">
+                                <!--[if gte mso 9]>
+                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:97px;">
+                                  <v:fill type="tile" src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-RepTracker/opbkgrd.png" color="#ffffff" />
+                                  <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                                <![endif]-->
+                                <div>
+                                  <table>
+                                    <tr>
+                                        <td class="inner contents" style="padding: 50px 60px 0 60px;">
+                                          <p class="h1">Get 50% Off Reputation Tracker Plus.</p>
+                                            <p>88% of consumers trust online reviews as much as personal recommendations. Bring them into your practice with help on Yelp, Healthgrades, and Google reviews.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="inner contents">
+                                            <p>Contact a Web Presence Advisor at <a href="tel:877.895.4011" style="text-decoration: none; color: #000;">877.895.4011</a> for 50% off.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="button">
+                                        <center>
+                                          <table align="center" style="margin: 0 auto;">
+                                            <tr>
+                                              <td align="center">
+                                                <a href="http://www.officite.com/dental/local-marketing/practice-reputation-management/" target="_blank">Learn More</a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </center>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <!--[if gte mso 9]>
+                                </v:textbox>
+                                </v:rect>
+                                <![endif]-->
+                                </td>
+                              </tr>
+                          </table>
+                      </div>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                  </td>
+              </tr>
+              <tr><td height="50"></td></tr>
+          </div>
+          <!--[if gte mso 9]>
+            </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+
+
+    <center class="footer-wrapper">
+      <div class="webkit">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+        <td>
+        <![endif]-->
+        <table class="outer" align="center">
+          <tr>
+            <td class="footer">
+              <table width="100%">
+                <tr>
+                  <td height="10"></td>
+                </tr>
+                <tr>
+                  <td class="inner social">
+                    <a href="https://www.facebook.com/officite" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-fb.png" style="height: auto;" alt="Follow Officite on Facebook" ></a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.officite.com/articles/" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-blog.png" style="height: auto;" alt="Read Officite's Blog" ></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/Officite" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-twitter.png" style="height: auto;" alt="Follow Officite on Twitter" ></a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.linkedin.com/company/officite" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-linkedin.png" style="height: auto;" alt="Connect with Officite on Linked-in"></a>&nbsp;&nbsp;&nbsp;
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height="10" class="footer-address"></td>
+          </tr>
+          <tr>
+            <td class="footer-address">
+              <p>%%Member_Busname%%<br>
+              %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+              Questions or concerns? Contact us at <a href="#">(877) 895-4011</a>.<br></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="hf-columns">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td>
+                      <p>&#169; 2016 Officite</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              <div class="column">
+                <table width="100%">
+                  <tr>
+                    <td>
+                      <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;">Unsubscribe</a> |
+                      <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;">Update Profile</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </div>
+    </center>
+    <custom name="opencounter" type="tracking">
+<!---end footer-->
+</body>
+</html>

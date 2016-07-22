@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="OFF-styles-base.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+body {
+  min-width: 100%;
+  background-color: #fff;
+  Margin: 0;
+  /*capitalize 'M' to keep Outlook from stripping it out*/
+  padding: 0;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif; }
+
+table {
+  /*remove cellpadding, cellspacing, and border from tables*/
+  border-collapse: collapse;
+  border-spacing: 0px; }
+
+td {
+  padding: 0; }
+
+img {
+  border: 0;}
+
+.imgfix {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #000001;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif; }
+
+p {
+  font-size: 18px;
+  Margin: 0;
+  font-family: 'Trebuchet MS Regular', Verdana, Geneva, sans-serif; }
+
+p.h1 {
+  font-size: 32px;
+  font-weight: normal;
+  Margin-bottom: 18px;
+  color:#002c5b;}
+
+p.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  Margin-bottom: 12px; }
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  /*ensure centered content is centered in yahoo*/ }
+
+.webkit {
+  max-width: 601px;
+  /*contain in Apple Mail 6 and Outlook 2011*/
+  Margin: 0 auto; }
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px; }
+
+.inner {
+  padding: 10px; }
+
+.contents {
+  width: 100%; }
+
+/*
+----------------------------
+      Header Styles
+-----------------------------
+*/
+.prev-text {
+  width: 100%;
+  font-size: 1px;
+  color: #0075bf;
+  line-height: 1px;
+  max-height: 1px;
+  overflow: hidden; }
+
+.hf-columns {
+  text-align: center;
+  font-size: 0;
+  padding: 10px 0; }
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top; }
+
+.header-links {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 22px 10px; }
+
+.header-links a{
+  color:#ffffff;
+}
+
+.header-image {
+  text-align: center; }
+
+.header-image img {
+  height: auto; }
+
+/*
+----------------------------
+       Hero Styles
+-----------------------------
+*/
+.header-wrapper {
+  background-color: #0075bf;
+  width: 100%;
+  table-layout: fixed; }
+
+.header-wrapper .outer {
+  background-color: #0075bf; }
+
+/*
+----------------------------
+       Footer Styles
+-----------------------------
+*/
+
+.footer-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  table-layout: fixed; }
+
+.footer-wrapper {
+  background-color: #ffffff;
+  font-size: 12px;
+  color: #9e9e9e;
+  text-align: center; }
+
+.footer-wrapper td {
+  text-align: center; }
+
+.footer-wrapper p {
+  font-size: 12px;
+  color: #9e9e9e;
+  text-align: center; }
+
+.footer-wrapper a {
+  font-size: 12px;
+  color: #0075bf; }
+
+.footer-wrapper p.h1 {
+  font-size: 18px; }
+
+.footer-wrapper .social {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;}
+
+.footer-wrapper .column td {
+  text-align: center;
+  color: #9e9e9e; }
+
+.footer-address {
+  margin: 0 auto;
+  background-color: #ffffff;
+  line-height: 17px;
+  vertical-align: center;
+  font-size: 10px;
+  color: #9E9E9E;
+  text-align: center; }
+
+.footer-address p {
+  font-size: 10px;
+  color: #9E9E9E;
+  text-align: center; }
+
+.footer-address a {
+  color: #9E9E9E; }
+
+  /*
+  ----------------------------
+    1. Single Column Styles
+  -----------------------------
+  */
+  .one-column .contents {
+    text-align: center; }
+
+  .one-column p {
+    Margin-bottom: 10px; }
+
+  /*
+  ----------------------------
+    2. Full Width Image Banner
+  -----------------------------
+  */
+  .full-width-image img {
+    width: 100%;
+    max-width: 600px;
+    /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto;
+    /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block; }
+
+  /*
+  ----------------------------
+     3. Two Column Styles
+  -----------------------------
+  */
+  .two-column {
+  	text-align: center;
+  	font-size: 0;
+  }
+  .two-column .column {
+  	width: 100%;
+  	max-width: 300px;
+  	display: inline-block;
+  	vertical-align: top;
+  }
+  .two-column .contents {
+  	font-size: 18px;
+  	text-align: left;
+  }
+  .two-column img {
+  	width: 100%;
+  	max-width: 280px;
+  	height: auto;
+  }
+  .two-column .text {
+  	padding-top: 10px;
+    text-align: center;
+    color:#002c5b;
+  }
+
+
+  /*
+  -----------------------
+     8. Button Styles
+  -----------------------
+  */
+  .button td {
+    padding: 10px 20px;
+    background-color: #fcb32c; }
+
+  .button a {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-size-adjust: none;
+    color: #000000; }
+
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+  <center class="header-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--Preview Text-->
+      <tr>
+        <td>
+              <table width="100%">
+                  <tr>
+                    <td class="prev-text"><!--[put preview text here 35-140 characters]-->
+                    </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+<!--Preview Text-->
+      <!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.officite.com" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/officite-lg-logo-invert.png" class="imgfix" width="300" alt="Officite">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.officite.com" target="_blank">www.Officite.com</a>
+                  &nbsp;|
+                  <a href="#">877.895.4011</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--hero block-->
+  <center class="hero-wrapper"><!--change the background-color in the css to update the background color behind this element, if you have different banners, then you need to copy this whole block for the new color. you can re-name the class to control the different color blocks. class="wrapper" is always white and class="footer-wrapper" is the officite blue-->
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+					<td class="two-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/img1a.jpg" class="imgfix" width="300" alt="Our Patient Education Library includes..." style=”font-family: Trebuchet, sans-serif; color: #9e9e9e; font-size: 18px;” />
+												</td>
+											</tr>
+                      <tr>
+                        <td>
+                          <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/img1b.jpg" class="imgfix" width="300" alt="Cosmetic Dentistry" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+                        </td>
+                      </tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="text">
+													<p class="h1">EDUCATION<br>FOR<br>EVERYONE</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/fulimg1a.jpg" class="imgfix" width="600" alt="Cirugia Oral" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+            </td>
+        </tr>
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/fulimg1b.jpg" class="imgfix" width="600" alt="Oral Surgery (inlcuded in Spanish Library)" style=”font-family: Trebuchet, sans-serif; color: #9e9e9e; font-style: italic; font-size: 18px;” />
+            </td>
+        </tr>
+        <tr>
+          <td class="two-column" dir="rtl">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <![endif]-->
+            <div class="column" dir="ltr">
+              <table width="100%">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/img2.jpg" class="imgfix" width="300" alt="Dental Implants" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td><td width="50%" valign="top">
+            <![endif]-->
+            <div class="column" dir="ltr">
+              <table width="100%">
+              <tr>
+                <td class="inner">
+                  <table class="contents">
+                    <tr>
+                      <td class="text" style="padding: 30px 0;">
+                        Premium Patient Education helps you boost treatment acceptance and reduce complications.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/fulimg2a.jpg" class="imgfix" width="600" alt="Salud Oral" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+            </td>
+        </tr>
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/fulimg2b.jpg" class="imgfix" width="600" alt="Oral Health (inlcuded in Spanish Library)" style=”font-family: Trebuchet, sans-serif; color: #9e9e9e; font-style: italic; font-size: 18px;” />
+            </td>
+        </tr>
+
+        <tr>
+          <td class="two-column">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <![endif]-->
+            <div class="column">
+              <table width="100%">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/img3.jpg" class="imgfix" width="300" alt="Things to know about Wisdom Teeth" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td><td width="50%" valign="top">
+            <![endif]-->
+            <div class="column">
+              <table width="100%">
+              <tr>
+                <td class="inner">
+                  <table class="contents">
+                    <tr>
+                      <td class="text" style="padding: 30px 0;">
+                        Reach more patients with 18 newly released HD videos and 100 pages of content now in Spanish.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/fulimg3a.jpg" class="imgfix" width="600" alt="Implantes Dentales" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+            </td>
+        </tr>
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/fulimg3b.jpg" class="imgfix" width="600" alt="Dental Implants (inlcuded in Spanish Library)" style=”font-family: Trebuchet, sans-serif; color: #9e9e9e; font-style: italic; font-size: 18px;” />
+            </td>
+        </tr>
+
+        <tr>
+          <td class="two-column" dir="rtl">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <![endif]-->
+            <div class="column" dir="ltr">
+              <table width="100%">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="https://s3.amazonaws.com/officite-eblast/2016/07-Jul/CC-pted/img4.jpg" class="imgfix" width="300" alt="Teeth Whitening" style=”font-family: Trebuchet, sans-serif; color: #0075bf; font-size: 30px;” />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td><td width="50%" valign="top">
+            <![endif]-->
+            <div class="column" dir="ltr">
+              <table width="100%">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td class="text">
+                          Add Spanish Patient Education and get 25% off setup and 2 months for free. Special discounts available when you purchase English as well!
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+
+        <tr>
+        	<td class="one-column">
+                <table width="100%">
+                  <tr>
+                    <td class="inner contents">
+                      <p>Call 877.895.4011 for details.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="button">
+                      <center>
+                        <table align="center" style="margin: 0 auto;">
+                          <tr>
+                            <td align="center">
+                              <a href="http://www.officite.com/dental/web-design/patient-education/">LEARN MORE</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </center>
+                    </td>
+                  </tr>
+                </table>
+            </td>
+        </tr>
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+
+<!--end color block-->
+
+<!--footer-->
+
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/officite" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-fb.png" style="height: auto;" alt="Follow Officite on Facebook" ></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.officite.com/articles/" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-blog.png" style="height: auto;" alt="Read Officite's Blog" ></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/Officite" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-twitter.png" style="height: auto;" alt="Follow Officite on Twitter" ></a>&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.linkedin.com/company/officite" target="_blank"><img src="https://s3.amazonaws.com/officite-eblast/global/blue-linkedin.png" style="height: auto;" alt="Connect with Officite on Linked-in"></a>&nbsp;&nbsp;&nbsp;
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="10" class="footer-address"></td>
+        </tr>
+        <tr>
+          <td class="footer-address">
+                  <p>%%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#">(877) 895-4011</a>.<br></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="hf-columns">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <![endif]-->
+            <div class="column">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <p>&#169; 2016 Officite</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td><td width="50%" valign="top">
+            <![endif]-->
+            <div class="column">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <p><a href="%%unsub_center_url%%" style="text-decoration:none;">Unsubscribe</a> |
+                    <a href="%%profile_center_url%%" style="text-decoration:none;">Update Profile</a></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  <custom name="opencounter" type="tracking">
+<!---end footer-->
+</body>
+</html>
