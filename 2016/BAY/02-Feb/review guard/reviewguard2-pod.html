@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!--Correct for Windows Phones, uses conditional statement to comment out in Outlook-->
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+
+<title></title>
+
+<!--Insert Styles Below-->
+<style type="text/css">
+/*
+------------------------
+    Base Email Styles
+-------------------------
+*/
+body {
+ min-width:100%;
+ background-color:#ffffff;
+ Margin:0; /*capitalize 'M' to keep Outlook from stripping it out*/
+ padding:0;
+ font-family:Verdana, Geneva, sans-serif;
+}
+
+
+table { /*remove cellpadding, cellspacing, and border from tables*/
+ border-collapse:collapse;
+ border-spacing: 0px;
+}
+
+td{
+  padding: 0;
+}
+
+img{
+  border:0;
+}
+
+.imgfix{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #000001;
+ font-family:'Trebuchet MS Regular',Verdana, Geneva, sans-serif;
+}
+
+p{
+  font-size: 16px;
+  Margin: 0;
+ font-family:'Trebuchet MS Regular',Verdana, Geneva, sans-serif;
+}
+
+.h1 {
+  font-size: 24px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}
+
+.wrapper{
+  width:100%;
+  table-layout: fixed; /*ensure centered content is centered in yahoo*/
+}
+.cta-wrapper{
+  background-color:#d4ebca;
+  width: 100%;
+  table-layout: fixed;
+}
+.cta-wrapper .outer{
+  background-color: #d4ebca;
+}
+.hero-wrapper{
+  background-color:#eef8f6;
+  width: 100%;
+  table-layout: fixed;
+}
+.hero-wrapper .outer{
+  background-color: #eef8f6;
+}
+.webkit {
+  max-width: 600px; /*contain in Apple Mail 6 and Outlook 2011*/
+}
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.inner {
+  padding: 10px;
+}
+
+.contents {
+  width: 100%;
+}
+
+
+/*
+----------------------------
+   Header & Footer Styles
+-----------------------------
+*/
+.prev-text {
+  width: 100%;
+  font-size: 1px;
+  color: #ffffff;
+  line-height: 1px;
+  max-height: 1px;
+  overflow: hidden; }
+  
+.hf-columns{
+  text-align: center;
+  font-size: 10px;
+  padding:20px 0;
+}
+
+.hf-columns .column {
+  width: 100%;
+  max-width: 297px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-links{
+  font-size:12px;
+  text-align:center;
+  color:#49196f;
+  text-transform:uppercase;
+}
+
+.header-image{
+  text-align: center;
+}
+
+.header-image img{
+  height: auto;
+}
+.footer-wrapper{
+  background-color: #6cbc49;
+  width: 100%;
+  table-layout: fixed;
+}
+.footer{
+  background-color: #6cbc49;
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer p{
+  font-size: 12px;
+  color: #ffffff;
+}
+.footer a{
+  color: #ffffff;
+}
+
+.footer .social{
+  text-align: center;
+}
+
+.footer .column td{
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-address{
+  margin:0 auto;
+  background-color:#ffffff;
+  line-height:17px;
+  font-size:10px;
+  color:#9E9E9E;
+  text-align:center;
+  vertical-align:center;
+}
+
+.footer .h1{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  Margin-bottom: 0;
+  Margin-top: 10px;
+}
+
+.footer .hf-columns{
+  padding: 0 0 20px 0;
+}
+/*
+----------------------------
+  1. Single Column Styles
+-----------------------------
+*/
+.one-column .contents {
+    text-align: center;
+}
+.one-column p {
+    Margin-bottom: 10px;
+    color: #858688;
+    line-height: 24px;
+}
+.one-column .h1{
+  color: #231f20;
+  font-weight: normal;
+}
+.cta-wrapper .one-column{
+  padding: 20px 0;
+}
+.cta-wrapper .one-column p {
+    Margin-bottom: 10px;
+    color: #1d4373;
+}
+.cta-wrapper .one-column .h1{
+  font-size: 24px;
+  color: #1d4373;
+}
+.wrapper .one-column{
+  padding: 20px 40px;
+}
+
+/*
+----------------------------
+  2. Full Width Image Banner
+-----------------------------
+*/
+.full-width-image img {
+    width: 100%;
+    max-width: 600px; /*set to match full width of table to ensure proper size on Windows Phone*/
+    height: auto; /*ensure proper aspect ratio across all clients*/
+    Margin: 0 auto;
+    display: block;
+}
+/*
+-----------------------
+   8. Button Styles
+-----------------------
+*/
+
+.button td{
+  padding:10px 20px;
+  border: 2px solid #f7a329;
+}
+.button table{
+  Margin: 10px 0;
+}
+.button a{
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+  -webkit-text-size-adjust:none;
+  color:#f7a329;
+}
+</style>
+
+<!--conditional statement for outlook - collapses borders on all tables to prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+
+
+</head>
+
+
+<body>
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+<!--Preview Text-->
+      <tr>
+        <td class="one-column">
+              <table width="100%">
+                  <tr>
+                    <td class="prev-text">Online reputation monitoring sale ends soon
+                    </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+<!--Preview Text-->
+
+      
+<!--header-->
+      <tr>
+        <td class="hf-columns">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="100%">
+          <tr>
+          <td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="header-image">
+                  <a href="http://www.OnlinePodiatrySites.com"><img src="https://s3.amazonaws.com/baystone-eblast/global/Pod_hlogo.png" width="300" alt="Online Podiatry Sites">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td><td width="50%" valign="top">
+          <![endif]-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner header-links">
+                  <a href="http://www.OnlinePodiatrySites.com">www.OnlinePodiatrySites.com</a>
+                  &nbsp;<br>
+                  <a href="#">888.932.5560</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </td>
+      </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end header-->
+
+<!--color block-->
+  <center class="hero-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+      
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/baystone-eblast/2016/02-Feb/reviewguard/prosp2-h-p.jpg" width="600" alt="" />
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end color block-->
+
+<!--color block-->
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+            <td class="full-width-image">
+                <img src="https://s3.amazonaws.com/baystone-eblast/2016/02-Feb/reviewguard/prosp2-s-all.jpg" width="600" alt="" />
+            </td>
+        </tr>
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1" style="color: #1d4373; font-weight: bold;">Isn't it Time You Took Control?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1" style="font-size: 20px;">Get Help with Yelp, Yahoo, and HealthGrades</p>
+                            <p>Don't let negative reviews and aggressive social media posts take control of your practice. Put yourself in the drivers' seat with review monitoring, review generation, and social media oversight designed to help you build a better online reputation. </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end color block-->
+
+<!--color block-->
+  <center class="wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p>Don't miss the <b>special introductory offer</b>! Take advantage of the savings before the end of February.</p>
+                            <p class="h1">Only <img src="http://www.testbaystone.com/userfiles/13144/upload/jan_2016/reviewguard360/49.png" style="vertical-align: middle; display: inline-block;"> <b>$39/mo</b></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+      
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end color block-->
+
+<!--color block-->
+  <center class="cta-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="one-column">
+                <table width="100%">
+                    <tr>
+                        <td class="inner contents">
+                            <p class="h1" style="color: #1d4373;font-size: 20px; font-weight: bold;">Call our Website Consultants Today</p>
+                            <p class="h1" style="color: #1d4373;"><a href="#" style="color: #1d4373;font-size: 20px; font-weight: bold;">(888) 932-5560</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+<!--end color block-->
+
+<!--footer-->
+  <center class="footer-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+        <tr>
+          <td class="footer">
+            <table width="100%">
+              <tr>
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="h1">No Setup. No Contract. No Worries</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="inner social">
+                  <a href="https://www.facebook.com/OnlinePodiatrySites"><img src="https://s3.amazonaws.com/baystone-eblast/global/white-fb.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://twitter.com/online_podiatry"><img src="https://s3.amazonaws.com/baystone-eblast/global/white-twitter.png" style="height: auto;"></a>&nbsp;&nbsp;&nbsp;
+                
+                </td>
+              </tr>
+              <tr>
+                <td class="hf-columns">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%">
+                  <tr>
+                  <td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <p>&#169; 2016 Online Podiatry Sites</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="50%" valign="top">
+                  <![endif]-->
+                  <div class="column">
+                    <table width="100%">
+                      <tr>
+                        <td>
+                          <a href="%%unsub_center_url%%" style="text-decoration:none;color:#ffffff;">Unsubscribe</a> | 
+                          <a href="%%profile_center_url%%" style="text-decoration:none;color:#ffffff;">Update Profile</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                  </tr>
+                  </table>
+                  <![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+  </center>
+  
+  <center class="footer-address-wrapper">
+    <div class="webkit">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="outer" align="center">
+              <tr>
+                <td height="10" class="footer-address"></td>
+              </tr>
+              <tr>
+                <td class="footer-address">
+                  %%Member_Busname%%<br>
+                  %%Member_Addr%%, %%Member_City%%, %%Member_State%% %%Member_PostalCode%%<br>
+                  Questions or concerns? Contact us at <a href="#" style="color:#9E9E9E;">(888) 932-5560</a>.<br>
+                </td>
+              </tr>
+
+                      
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+<!---end footer-->
+    </div>
+  </center>
+</body>
+</html>
